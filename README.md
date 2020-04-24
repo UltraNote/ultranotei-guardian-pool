@@ -1,6 +1,6 @@
 # ultranotei-guardian-pool
 
-Pool for monitoring Conceal node Guardian instances. Also provides random selection of a node.
+Pool for monitoring UltraNoteI node Guardian instances. Also provides random selection of a node.
 The pool also has an "inactive cleanup feature". If a node does not send data for a specific ammount of time it is delisted from the pool until it sends the data again. Pool also has DDOS protection.
 
 Currently there are 3 API endpoints described bellow
