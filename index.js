@@ -10,7 +10,7 @@ const moment = require('moment');
 const utils = require("./utils.js");
 const cors = require("cors");
 const path = require("path");
-const CCX = require("conceal-api");
+const XUNI = require("ultranotei-api");
 const fs = require("fs");
 
 // query api timeout

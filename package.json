@@ -1,14 +1,14 @@
 {
-  "name": "concealnodepool",
+  "name": "ultranoteinodepool",
   "version": "1.1.0",
-  "description": "Conceal Pool for Conceal Nodes",
+  "description": "UltraNoteI Pool for UltraNoteI Nodes",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ConcealNetwork/conceal-guardian-pool.git"
+    "url": "git+https://github.com/xun-project/ultranotei-guardian-pool.git"
   },
   "author": "Taegus",
   "license": "MIT",
