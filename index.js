@@ -226,7 +226,7 @@ app.get("/pool/random", listNodesLimiter, (req, res, next) => {
       var randomNode = nodeList[Math.floor(Math.random() * nodeList.length)];
 
       if (randomNode) {
-        res.json({ success: true, url: vsprintf("%s:%d", [(randomNode.url && randomNode.url.host) ? randomNode.url.host : randomNode.nodeHost, (randomNode.url && randomNode.url.port) ? randomNode.url.port : randomNode.nodePort || 16000]) });
+        res.json({ success: true, url: vsprintf("%s:%d", [(randomNode.url && randomNode.url.host) ? randomNode.url.host : randomNode.nodeHost, (randomNode.url && randomNode.url.port) ? randomNode.url.port : randomNode.nodePort || 43000]) });
       } else {
         res.json({ success: false });
       }
@@ -239,7 +239,7 @@ app.get("/pool/random", listNodesLimiter, (req, res, next) => {
 // post request for updating the node data
 app.post("/pool/update", updateNodeLimier, (req, res, next) => {
   if ((req.body) && (req.body.id) && (req.body.nodeHost) && (req.body.nodePort)) {
-    var CCXApi = new CCX(vsprintf("http://%s", [req.body.url ? req.body.url.host : req.body.nodeHost]), "3333", req.body.url ? req.body.url.port : req.body.nodePort, apiTimeout);
+    var XUNIApi = new XUNI(vsprintf("http://%s", [req.body.url ? req.body.url.host : req.body.nodeHost]), "9999", req.body.url ? req.body.url.port : req.body.nodePort, apiTimeout);
 
     CCXApi.info().then(data => {
       setNodeData(req.body, true, function (result) {
