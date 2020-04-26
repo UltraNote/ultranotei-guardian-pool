@@ -241,7 +241,7 @@ app.post("/pool/update", updateNodeLimier, (req, res, next) => {
   if ((req.body) && (req.body.id) && (req.body.nodeHost) && (req.body.nodePort)) {
     var XUNIApi = new XUNI(vsprintf("http://%s", [req.body.url ? req.body.url.host : req.body.nodeHost]), "9999", req.body.url ? req.body.url.port : req.body.nodePort, apiTimeout);
 
-    CCXApi.info().then(data => {
+    XUNIApi.info().then(data => {
       setNodeData(req.body, true, function (result) {
         res.json({ success: result });
       });
