@@ -20,7 +20,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-rate-limit": "^3.5.3",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "node-cache": "^4.2.1",
     "shelljs": "^0.8.5",
     "sprintf-js": "^1.1.2",
